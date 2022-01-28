@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Form from './components/Form';
+import About from './components/About';
+
+// const select = document.getElementById("upper");
+// const myBox = document.getElementById("myBox");
+//     select.addEventListener('click', function(){
+//       myBox.toupperCase();
+//     });
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <Navbar  title ="TextUtils"/>  
+       <div className="container">
+       <Form heading ="Enter The Text Below For Analyze."/> 
+       <About/>
+       </div>
+    </>
   );
 }
 
